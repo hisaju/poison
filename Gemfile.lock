@@ -28,8 +28,11 @@ GEM
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     netrc (0.11.0)
+    nio4r (2.5.9)
     opus-ruby (1.0.1)
       ffi
+    puma (6.3.0)
+      nio4r (~> 2.0)
     rack (2.2.8)
     rack-protection (3.0.6)
       rack
@@ -65,6 +68,7 @@ DEPENDENCIES
   discordrb
   dotenv
   httparty
+  puma
   sinatra
   slim
 
