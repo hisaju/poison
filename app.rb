@@ -15,13 +15,9 @@ class App < Sinatra::Application
 
   post '/poison' do
     btn = 'out'
-    btn = 'out' if params[:out]
-    btn = 'kusa' if params[:kusa]
-    btn = 'normal' if params[:normal]
-    btn = 'high' if params[:high]
-    btn = 'hightone' if params[:hightone]
-    btn = 'hayakuchi' if params[:hayakuchi]
-    btn = 'nagame' if params[:nagame]
+    %i/out kusa normal high hightone hayakuchi nagame kick gomente iine tsukareta/.each do |key|
+      btn = key.to_s if params[key]
+    end
 
     client = Discordrb::Webhooks::Client.new(url: ENV.fetch('WEBHOOK_URL'))
     client.execute do |builder|
