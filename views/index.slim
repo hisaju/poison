@@ -13,51 +13,49 @@ html[lang="en"]
           span.d-block.my-1 Poison
       
     .container.my-5
-      h1
-        | 言いたいことも言える
-        br
-        | そんなDiscord Bot
+      h1.mb-5.text-center
+        | 言いたいことも言える、そんなDiscord Bot。
       hr.col-1.my-4
       form action="/poison" method="post"
-        .row
+        .row.mb-3
           .col-md-6
-            h4 1. チャンネルを選択してください
+            h4.mb-3 1. チャンネルを選択してください
             select.form-select[name="channel"]
               option[value="1136261894374686782"] 校長室
               option[value="1102259433167405196"] カフェ
         .row.mt-3
           .col-md-12
-            h4 2. 言いたいことのボタンを押してください
+            h4.mb-3.mt-3 2. 言いたいことのボタンを押してください
             table.table.table.table-bordered
               tr
                 th.text-center.pt-3
                   h5 通常
                 td.pt-2
-                  button.btn.btn-outline-danger.me-3[type="submit" name="out"]
+                  button.btn.btn-outline-danger.me-3.mb-1[type="submit" name="out"]
                     | アウト
-                  button.btn.btn-outline-success.me-3[type="submit" name="kusa"]
+                  button.btn.btn-outline-success.me-3.mb-1[type="submit" name="kusa"]
                     | 草
-                  button.btn.btn-outline-primary.me-3[type="submit" name="kick"]
+                  button.btn.btn-outline-primary.me-3.mb-1[type="submit" name="kick"]
                     | タイキック
-                  button.btn.btn-outline-primary.me-3[type="submit" name="iine"]
+                  button.btn.btn-outline-primary.me-3.mb-1[type="submit" name="iine"]
                     | いいね
-                  button.btn.btn-outline-primary.me-3[type="submit" name="tsukareta"]
+                  button.btn.btn-outline-primary.me-3.mb-1[type="submit" name="tsukareta"]
                     | 疲れた
-                  button.btn.btn-outline-primary.me-3[type="submit" name="gomente"]
+                  button.btn.btn-outline-primary.me-3.mb-1[type="submit" name="gomente"]
                     | ごめんて
               tr
                 th.text-center.pt-3
                   h5 誰が言うとんねん
                 td.pt-2
-                  button.btn.btn-outline-secondary.me-3[type="submit" name="normal"]
+                  button.btn.btn-outline-secondary.me-3.mb-1[type="submit" name="normal"]
                     | ノーマル
-                  button.btn.btn-outline-secondary.me-3[type="submit" name="high"]
+                  button.btn.btn-outline-secondary.me-3.mb-1[type="submit" name="high"]
                     | テンション高め
-                  button.btn.btn-outline-secondary.me-3[type="submit" name="hightone"]
+                  button.btn.btn-outline-secondary.me-3.mb-1[type="submit" name="hightone"]
                     | 声高め
-                  button.btn.btn-outline-secondary.me-3[type="submit" name="hayakuchi"]
+                  button.btn.btn-outline-secondary.me-3.mb-1[type="submit" name="hayakuchi"]
                     | 早口さん
-                  button.btn.btn-outline-secondary.me-3[type="submit" name="nagame"]
+                  button.btn.btn-outline-secondary.me-3.mb-1[type="submit" name="nagame"]
                     | 尺たっぷり
 
 
