@@ -6,6 +6,9 @@ require 'dotenv/load'
 require 'discordrb'
 
 class App < Sinatra::Application
+  use Rack::Auth::Basic, "ユーザ名とパスワードを入力してください" do |username, password|
+    username == ENV.fetch('BASIC_AUTH_USER') && password == ENV.fetch('BASIC_AUTH_PASSWORD')
+  end
   get '/' do
     slim :index
   end
