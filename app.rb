@@ -15,7 +15,7 @@ class App < Sinatra::Application
 
   post '/poison' do
     btn = 'out'
-    %i/out kusa normal high hightone hayakuchi nagame kick gomente iine tsukareta/.each do |key|
+    %i/out kusa normal high hightone hayakuchi nagame kick gomente iine tsukareta amane/.each do |key|
       btn = key.to_s if params[key]
     end
 
